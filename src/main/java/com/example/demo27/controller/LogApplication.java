@@ -23,6 +23,11 @@ public class LogApplication {
  
         return "log";
     }
+
+    @GetMapping("/register")
+    public String register() {
+        return "register";
+    }
  
     @PostMapping("/log")
     public String login(@ModelAttribute("user") login user) {
